@@ -39,7 +39,7 @@ public class BlockCreateManager : MonoBehaviour
             }
 
             Renderer renderer = cube.GetComponent<Renderer>();
-
+            
             if (renderer != null)
             {
                 renderer.material.color = blockColoringManager.Lists[i];

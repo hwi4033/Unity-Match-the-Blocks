@@ -35,11 +35,9 @@ public class BlockColoringManager : MonoBehaviour
 
     public void Shuffle()
     {
-        int last = lists.Count - 2;
-
-        for (int i = 0; i < lists.Count - 2; i++)
+        for (int i = lists.Count - 1; i > 0; i--)
         {
-            int random = Random.Range(i, last);
+            int random = Random.Range(0, i);
 
             Color temp = lists[random];
             lists[random] = lists[i];
